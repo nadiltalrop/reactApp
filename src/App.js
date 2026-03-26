@@ -1,25 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import StyleSheet from 'styled-components';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    	<>
+			<Headding>Welcome to my FirstReact App</Headding>
+		</>
+	);
+}	
+
+const Headding = StyleSheet.h1`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin : 100px;
+`;
 
 export default App;
